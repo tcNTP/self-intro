@@ -13,6 +13,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 [cloud 2](https://www.pexels.com/video/view-of-clouds-in-the-sky-2049255/)
 [cloud 3](https://www.pexels.com/video/sky-is-blue-856463/)
 [stars 1](https://www.pexels.com/video/time-lapse-of-stars-in-the-sky-856926/)
+[photo 1](https://www.pexels.com/video/close-view-of-a-lens-of-a-camera-1787376/)
 
 ### Markdown
 
