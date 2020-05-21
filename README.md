@@ -9,8 +9,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 [Colorlib](https://colorlib.com/wp/template/scenic/)
 
 ## Reference
-[Short Video 1](https://www.pexels.com/video/time-lapse-of-cumulus-clouds-856171/)
-[Short Video 2](https://www.pexels.com/video/view-of-clouds-in-the-sky-2049255/)
+[cloud 1](https://www.pexels.com/video/time-lapse-of-cumulus-clouds-856171/)
+[cloud 2](https://www.pexels.com/video/view-of-clouds-in-the-sky-2049255/)
+[cloud 3](https://www.pexels.com/video/sky-is-blue-856463/)
 
 ### Markdown
 
