@@ -5,14 +5,11 @@ You can visit my page from this [link](https://tcntp.github.io)
 ## Changes
  - Contents
  - Pictures
-
+ - Videos
 ## New Function
  - To be continued...
-
 ## Source Template
-
 [Colorlib](https://colorlib.com/wp/template/scenic/)
-
 ## Reference
 ### Quotes
 Search from Internet
