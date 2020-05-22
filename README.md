@@ -14,6 +14,8 @@ You can visit my page from this [link](https://tcntp.github.io)
 [Colorlib](https://colorlib.com/wp/template/scenic/)
 
 ## Reference
+### Quotes
+Search from Internet
 ### Pictures
 ### Videos
 [cloud 1](https://www.pexels.com/video/time-lapse-of-cumulus-clouds-856171/)
