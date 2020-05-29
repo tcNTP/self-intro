@@ -1,13 +1,27 @@
 # Welcome to My Personal Page
 
-You can visit my page from this [link](https://tcntp.github.io)
+You can visit my page by click link below.\
+[NTP](https://tcntp.github.io)
 
-## Changes
- - Contents
- - Pictures
- - Videos
-## New Function
- - To be continued...
+## Architecture
+### Home
+### About
+### Skills
+ - Astronomy
+ - Photography
+ - Social Managing
+ - Programming
+ - Computer
+ - Fixing
+### Works
+ - Phone Simulate Website
+ - Photograph
+ - Atmospheric Final Project
+### Experiences
+ - Hong Kong Educational Trip
+ - America Educational Trip
+ - 
+### Contacts
 ## Source Template
 [Colorlib](https://colorlib.com/wp/template/scenic/)
 ## Reference
