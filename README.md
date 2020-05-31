@@ -18,8 +18,10 @@ You can visit my page by click link below.\
  - Photograph
  - Atmospheric Final Project
 ### Experiences
+ - Astronomy Club
+ - Contests
  - Hong Kong Educational Trip
- - America Educational Trip
+ - USA Educational Trip
  - 
 ### Contacts
 ## Source Template
