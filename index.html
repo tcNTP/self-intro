@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="fonts/line-icons/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap">
     <link rel="icon" href="images/icon.png">
-    <!-- MAIN CSS -->
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -36,45 +36,19 @@
         <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
 
-    <!-- NAVBAR -->
+    <!-- Navigator Bar -->
     <header class="site-navbar mt-3" id="top">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="site-logo col-6"><a href="index.html">NTP</a></div>
                 <nav class="mx-auto site-navigation">
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
-                        <li><a href="index.html" class="nav-link active" onclick="location.replace('index.html'),'_top'">Home</a></li>
-                        <li><a href="about.html" onclick="location.replace('about.html'),'_top'">About</a></li>
-                        <li class="has-children">
-                            <a href="skills.html">Skills</a>
-                            <ul class="dropdown">
-                                <li><a href="astronomy.html" onclick="location.replace('astronomy.html'),'_top'">Astronomy</a></li>
-                                <li><a href="photography.html" onclick="location.replace('photography.html'),'_top'">Photography</a></li>
-                                <li><a href="blog-single.html" onclick="location.replace('social.html'),'_top'">Social</a></li>
-                                <li><a href="programming.html" onclick="location.replace('programming.html'),'_top'">Programming</a></li>
-                                <li><a href="computer.html" onclick="location.replace('computer.html'),'_top'">Computer</a></li>
-                                <li><a href="fixing.html" onclick="location.replace('fixing.html'),'_top'">Fixing</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-children">
-                            <a href="works.html">Works</a>
-                            <ul class="dropdown">
-                                <li><a href="skills.html" onclick="location.replace('skills.html'),'_top'">Photograph</a></li>
-                                <li><a href="astronomy.html" onclick="location.replace('astronomy.html'),'_top'">Atmospheric<br>Final Project</a></li>
-                                <li><a href="phone/Samsung_Galaxy_Note_9.html" onclick="location.replace('phone/Samsung_Galaxy_Note_9.html'),'_top'">Phone</a></li>
-                                <li><a href="referendum.html" onclick="location.replace('referendum.html')">2018 Referendum</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-children">
-                            <a href="experiences.html">Experiences</a>
-                            <ul class="dropdown">
-                                <li><a href="astronomy_club.html" onclick="location.replace('astronomy_club.html'),'_top'">Astronomy Club</a></li>
-                                <li><a href="contests.html" onclick="location.replace('contests.html'),'_top'">Contests</a></li>
-                                <li><a href="hongkong.html" onclick="location.replace('hongkong.html'),'_top'">HK Educational Trip</a></li>
-                                <li><a href="america.html" onclick="location.replace('america.html'),'_top'">USA Educational Trip</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html" onclick="location.replace('contact.html'),'_top'">Contact</a></li>
+                        <li><a href="#home-section" class="nav-link active" onclick="location.replace('index.html'),'_top'">Home</a></li>
+                        <li><a href="#about-me-section" class="smoothscroll">About</a></li>
+                        <li><a href="#skills-section" class="smoothscroll">Skills</a></li>
+                        <li><a href="#works-section" class="smoothscroll">Works</a></li>
+                        <li><a href="#experiences-section" class="smoothscroll">Experiences</a></li>
+                        <li><a href="#contact-section">Contact</a></li>
                     </ul>
                 </nav>
 
@@ -85,7 +59,7 @@
         </div>
     </header>
 
-    <!-- HOME -->
+    <!-- Home -->
     <section class="home-section section-hero overlay slanted" id="home-section">
         <div class="container">
             <div class="row align-items-center justify-content-center">
@@ -104,22 +78,23 @@
                 <source type="video/mp4" src="videos/cloud_1.mp4">
             </video>
         </div>
-        <a href="#about-me-section" class="scroll-button smoothscroll">
+        <a href="#footer" class="scroll-button smoothscroll">
             <span class=" icon-keyboard_arrow_down"></span>
         </a>
     </section>
 
-    <!-- ABOUT ME -->
+    <!-- About Me -->
     <section class="site-section about-me-section" id="about-me-section">
         <div class="container">
             <div class="row mb-5 pt-0 site-section">
                 <div class="col-md-6 align-self-center">
                     <h3 class="section-title-sub text-primary">About Me</h3>
-                    <h2 class="section-title mb-4">Hi! I am NTP.</h2>
-                    <p>Gender: Male</p>
+                    <h2 class="section-title mb-4">WHO AM I?</h2>
+                    <p>My name is Fu, Dao-Jheng.</p>
                     <p>Study at NTUAS</p>
                     <p>Live in Taipei, Taiwan</p>
-                    <p class="mt-4"><a href="about.html" class="spepcial_link">Read more about me</a></p>
+                    <p>Hometown: Taichung, Taiwan</p>
+                    <p>An ordinary person has many dreams.</p>
                 </div>
                 <div class="col-md-5 ml-auto img-overlap">
                     <div class="img-1"><img src="images/person_1.jpg" alt="Image" class="img-fluid img-shadow"></div>
@@ -129,10 +104,10 @@
             <div class="row pb-0 border-top pt-5 block__19738 section-counter">
                 <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
                     <div class="d-flex align-items-center justify-content-center mb-2">
-                        <span class="icon-line-profile-male mr-3"></span>
-                        <strong class="number" data-number="18">0</strong>
+                        <span class="icon-line-global mr-3"></span>
+                        <strong class="number" data-number="3">0</strong>
                     </div>
-                    <span class="caption">My Age</span>
+                    <span class="caption">Languages</span>
                 </div>
                 <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
                     <div class="d-flex align-items-center justify-content-center mb-2">
@@ -159,140 +134,222 @@
         </div>
     </section>
 
-    <!-- SKILLS -->
-    <section class="site-section services-section bg-light block__62849" id="skills-section">
+    <!-- Languages -->
+    <section class="site-section services-section block__62849 language" id="languages-section">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center" data-aos="fade">
-                    <h3 class="section-title-sub text-primary">My Skills</h3>
-                    <h2 class="section-title mb-3">Skills</h2>
+                    <h3 class="section-title-sub text-primary">Languages</h3>
+                    <h2 class="section-title mb-3">How Many Languages I Can</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
-                    <a href="astronomy.html" class="block__16443 text-center d-block">
-                        <span class="custom-icon mx-auto"><span class="icon-line-telescope d-block"></span></span>
-                        <h3>Astronomy</h3>
-                        <p>A Sky Full of Stars.</p>
-                    </a>
+                    <div class="block__16443 text-center d-block">
+                        <span class="custom-icon mx-auto"><span class="icon-line-global d-block"></span></span>
+                        <h3>Taiwanese Mandarin</h3>
+                        <p style="font-family: 'Noto Sans TC', sans-serif">嗨！大家好！</p>
+                    </div>
                 </div>
                 <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
-                    <a href="photography.html" class="block__16443 text-center d-block">
-                        <span class="custom-icon mx-auto"><span class="icon-line-camera d-block"></span></span>
-                        <h3>Photography</h3>
-                        <p>Capture My Life.</p>
-                    </a>
+                    <div class="block__16443 text-center d-block">
+                        <span class="custom-icon mx-auto"><span class="icon-line-global d-block"></span></span>
+                        <h3>English</h3>
+                        <p style="font-family: 'Noto Sans TC', sans-serif">Hello! Everyone!</p>
+                    </div>
                 </div>
                 <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
-                    <a href="programming.html" class="block__16443 text-center d-block">
-                        <span class="custom-icon mx-auto"><span class="icon-line-laptop d-block"></span></span>
-                        <h3>Programming</h3>
-                        <p>I Love Programming.</p>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <a href="skills.html" class="btn btn-primary btn-md">View All Skills</a>
+                    <div class="block__16443 text-center d-block">
+                        <span class="custom-icon mx-auto"><span class="icon-line-global d-block"></span></span>
+                        <h3>Japanese</h3>
+                        <p style="font-family: 'Noto Sans TC', sans-serif">みんなさん、こんにちは。</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Works -->
-    <section class="site-section block__62272" id="works-section">
+    <!-- Skills -->
+    <section class="site-section services-section bg-light block__62849 skills" id="skills-section">
         <div class="container">
-            <div class="row mb-3">
+            <div class="row mb-5">
                 <div class="col-12 text-center" data-aos="fade">
-                    <h3 class="section-title-sub text-primary">Awesome Works</h3>
+                    <h3 class="section-title-sub text-primary">Skills</h3>
+                    <h2 class="section-title mb-3">How Many Skills I Can</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+
+                    <div class="block__16443 text-center d-block">
+                        <span class="custom-icon mx-auto"><span class="icon-line-telescope d-block"></span></span>
+                        <h3>Astronomy</h3>
+                        <p>A Sky Full of Stars.</p>
+                    </div>
+
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+
+                    <div class="block__16443 text-center d-block">
+                        <span class="custom-icon mx-auto"><span class="icon-line-camera d-block"></span></span>
+                        <h3>Photography</h3>
+                        <p>Capture My Life.</p>
+                    </div>
+
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+
+                    <div class="block__16443 text-center d-block">
+                        <span class="custom-icon mx-auto"><span class="icon-line-facebook d-block"></span></span>
+                        <h3>Social Media</h3>
+                        <p>Manage Social Media.</p>
+                    </div>
+
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+
+                    <div class="block__16443 text-center d-block">
+                        <span class="custom-icon mx-auto"><span class="icon-line-laptop d-block"></span></span>
+                        <h3>Programming</h3>
+                        <p>Python, GrADS, ForTran<br>JavaScripts.</p>
+                    </div>
+
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+
+                    <div class="block__16443 text-center d-block">
+                        <span class="custom-icon mx-auto"><span class="icon-line-desktop d-block"></span></span>
+                        <h3>Computer</h3>
+                        <p>CPU, GPU, RAM<br>Motherboard!</p>
+                    </div>
+
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+
+                    <a class="block__16443 text-center d-block">
+                        <span class="custom-icon mx-auto"><span class="icon-line-tools-2 d-block"></span></span>
+                        <h3>Fixing things</h3>
+                        <p class="d-sm-block">Fixing Some Electric Equipments,<br>or Break it...</p>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Works -->
+    <section class="site-section block__45439 Works" id="works-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center" data-aos="fade">
+                    <h3 class="section-title-sub text-primary">Works</h3>
                     <h2 class="section-title mb-3">My Works</h2>
                 </div>
             </div>
-            <div class="row justify-content-center mb-5" data-aos="fade-up">
-                <div id="filters" class="filters text-center button-group col-md-7">
-                    <button class="btn btn-primary active" data-filter="*">All</button>
-                    <button class="btn btn-primary" data-filter=".photo">Photograph</button>
-                    <button class="btn btn-primary" data-filter=".project">Projects</button>
-                    <button class="btn btn-primary" data-filter=".website">Website</button>
+            <div class="row">
+                <div class="col-md-6 col-lg-6 mb-4">
+                    <div class="block__86547 d-block d-xl-flex align-items-stretch">
+                        <figure class="img" style="background-image: url('images/atmos_report/atmos_proj.png')">
+                        </figure>
+                        <div class="h-100">
+                            <h3 class="mb-4" style="font-family: 'Noto Sans TC', sans-serif">
+                                <a href="doc/中彰投地區的空氣品質變化.pdf">大氣科學概論期末報告</a>
+                            </h3>
+                            <div class="block__27192 d-flex pt-1 border-top">
+                                <a href="#"><span class="icon-person"></span> NTP</a>
+                                <a href="#"><span class="icon-calendar-o"></span> 01 Dec 2019</a>
+                                <a href="#"><span class="icon-chat"></span> 5</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div id="posts" class="row no-gutter">
-                <div class="item photo col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                    <a href="astronomy_club.html" class="item-wrap">
-                        <span class="icon-add"></span>
-                        <img class="img-fluid" src="images/photo_1.JPG">
-                    </a>
+                <div class="col-md-6 col-lg-6 mb-4">
+                    <div class="block__86547 d-block d-xl-flex align-items-stretch">
+                        <figure class="img" style="background-image: url('images/phone.png')">
+                        </figure>
+                        <div class="h-100">
+                            <h3 class="mb-4" style="font-family: 'Noto Sans TC', sans-serif">
+                                <a href="phone/Samsung_Galaxy_Note_9.html">Phone Simulate Website</a>
+                            </h3>
+                            <div class="block__27192 d-flex pt-1 border-top">
+                                <a href="#"><span class="icon-person"></span> NTP</a>
+                                <a href="#"><span class="icon-calendar-o"></span> 01 May 2020</a>
+                                <a href="#"><span class="icon-chat"></span> 2</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="item project col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                    <a href="astronomy_club.html" class="item-wrap">
-                        <span class="icon-add"></span>
-                        <img class="img-fluid" src="images/atmos_report/atmos_proj.png">
-                    </a>
+                <div class="col-md-6 col-lg-6 mb-4">
+                    <div class="block__86547 d-block d-xl-flex align-items-stretch">
+                        <figure class="img" style="background-image: url('images/astro_club/website.png')">
+                        </figure>
+                        <div class="h-100">
+                            <h3 class="mb-4" style="font-family: 'Noto Sans TC', sans-serif">
+                                <a href="https://mdac19720901.wixsite.com/mdastroclub">Astronomy Club Website</a>
+                            </h3>
+                            <div class="block__27192 d-flex pt-1 border-top">
+                                <a href="#"><span class="icon-person"></span> NTP</a>
+                                <a href="#"><span class="icon-calendar-o"></span> 01 Sep 2017</a>
+                                <a href="#"><span class="icon-chat"></span> 2</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="item website col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                    <a href="astronomy_club.html" class="item-wrap">
-                        <span class="icon-add"></span>
-                        <img class="img-fluid" src="images/astro_club/website.png">
-                    </a>
+                <div class="col-md-6 col-lg-6 mb-4">
+                    <div class="block__86547 d-block d-xl-flex align-items-stretch">
+                        <figure class="img" style="background-image: url('images/referendum.png')">
+                        </figure>
+                        <div class="h-100">
+                            <h3 class="mb-4" style="font-family: 'Noto Sans TC', sans-serif">
+                                <a href="doc/20181124全國性公投投票指南.pdf">2018 Referendum</a>
+                            </h3>
+                            <div class="block__27192 d-flex pt-1 border-top">
+                                <a href="#"><span class="icon-person"></span> NTP</a>
+                                <a href="#"><span class="icon-calendar-o"></span> 24 Nov 2018</a>
+                                <a href="#"><span class="icon-chat"></span> 4</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                    <a href="astronomy_club.html" class="item-wrap">
-                        <span class="icon-add"></span>
-                        <img class="img-fluid" src="images/sq_img_4.jpg">
-                    </a>
+                <div class="col-md-6 col-lg-6 mb-4">
+                    <div class="block__86547 d-block d-xl-flex align-items-stretch">
+                        <figure class="img" style="background-image: url('images/typhoon.png')">
+                        </figure>
+                        <div class="h-100">
+                            <h3 class="mb-4" style="font-family: 'Noto Sans TC', sans-serif">
+                                <a href="https://tcntp.blogspot.com/2016/10/TyphoonTestAnswer.html">2016 Typhoon QA</a>
+                            </h3>
+                            <div class="block__27192 d-flex pt-1 border-top">
+                                <a href="#"><span class="icon-person"></span> NTP</a>
+                                <a href="#"><span class="icon-calendar-o"></span> 02 Oct 201</a>
+                                <a href="#"><span class="icon-chat"></span> 4</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                    <a href="astronomy_club.html" class="item-wrap">
-                        <span class="icon-add"></span>
-                        <img class="img-fluid" src="images/sq_img_5.jpg">
-                    </a>
-                </div>
-                <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                    <a href="astronomy_club.html" class="item-wrap">
-                        <span class="icon-add"></span>
-                        <img class="img-fluid" src="images/sq_img_6.jpg">
-                    </a>
-                </div>
-                <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                    <a href="astronomy_club.html" class="item-wrap">
-                        <span class="icon-add"></span>
-                        <img class="img-fluid" src="images/sq_img_7.jpg">
-                    </a>
-                </div>
-                <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                    <a href="astronomy_club.html" class="item-wrap">
-                        <span class="icon-add"></span>
-                        <img class="img-fluid" src="images/sq_img_8.jpg">
-                    </a>
-                </div>
-                <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                    <a href="astronomy_club.html" class="item-wrap">
-                        <span class="icon-add"></span>
-                        <img class="img-fluid" src="images/sq_img_9.jpg">
-                    </a>
-                </div>
-                <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                    <a href="astronomy_club.html" class="item-wrap">
-                        <span class="icon-add"></span>
-                        <img class="img-fluid" src="images/sq_img_10.jpg">
-                    </a>
-                </div>
-                <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                    <a href="astronomy_club.html" class="item-wrap">
-                        <span class="icon-add"></span>
-                        <img class="img-fluid" src="images/sq_img_11.jpg">
-                    </a>
-                </div>
-                <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                    <a href="astronomy_club.html" class="item-wrap">
-                        <span class="icon-add"></span>
-                        <img class="img-fluid" src="images/sq_img_12.jpg">
-                    </a>
+                <div class="col-md-6 col-lg-6 mb-4">
+                    <div class="block__86547 d-block d-xl-flex align-items-stretch">
+                        <figure class="img" style="background-image: url('images/radar.png')">
+                        </figure>
+                        <div class="h-100">
+                            <h3 class="mb-4" style="font-family: 'Noto Sans TC', sans-serif">
+                                <a href="doc/輕鬆看懂雷達回波圖.pdf">2018 Radar QA</a>
+                            </h3>
+                            <div class="block__27192 d-flex pt-1 border-top">
+                                <a href="#"><span class="icon-person"></span> NTP</a>
+                                <a href="#"><span class="icon-calendar-o"></span> 02 Oct 201</a>
+                                <a href="#"><span class="icon-chat"></span> 4</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="site-section block__45439">
+
+    <!-- Experiences -->
+    <section class="site-section block__45439 bg-light Experiences" id="experiences-section">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center" data-aos="fade">
@@ -306,11 +363,11 @@
                         <figure class="img" style="background-image: url('images/astro_club/profile.png')">
                         </figure>
                         <div class="h-100">
-                            <h3 class="mb-4"><a href="astronomy_club.html">Astronomy Club</a></h3>
+                            <h3 class="mb-4" style="font-family: 'Noto Sans TC', sans-serif"><a href="#">Astronomy Club</a></h3>
                             <div class="block__27192 d-flex pt-1 border-top">
                                 <a href="#"><span class="icon-person"></span> NTP</a>
-                                <a href="#"><span class="icon-calendar-o"></span> 1 Aug 2017</a>
-                                <a href="#"><span class="icon-chat"></span> 5</a>
+                                <a href="#"><span class="icon-calendar-o"></span> 2013 ~ 2019</a>
+                                <a href="#"><span class="icon-chat"></span> 8</a>
                             </div>
                         </div>
                     </div>
@@ -320,11 +377,13 @@
                         <figure class="img" style="background-image: url('images/us/solar_eclipse.jpg')">
                         </figure>
                         <div class="h-100">
-                            <h3 class="mb-4"><a href="#">2017 USA Educational Trip</a></h3>
+                            <h3 class="mb-4" style="font-family: 'Noto Sans TC', sans-serif">
+                                <a href="#">2017 USA Educational Trip</a>
+                            </h3>
                             <div class="block__27192 d-flex pt-1 border-top">
                                 <a href="#"><span class="icon-person"></span> NTP</a>
                                 <a href="#"><span class="icon-calendar-o"></span> 21 Aug 2017</a>
-                                <a href="#"><span class="icon-chat"></span> 2</a>
+                                <a href="#"><span class="icon-chat"></span> 9</a>
                             </div>
                         </div>
                     </div>
@@ -334,11 +393,13 @@
                         <figure class="img" style="background-image: url('images/hk/einstein.JPG')">
                         </figure>
                         <div class="h-100">
-                            <h3 class="mb-4"><a href="#">2016 HK Educational Trip</a></h3>
+                            <h3 class="mb-4" style="font-family: 'Noto Sans TC', sans-serif">
+                                <a href="#">2016 HK Educational Trip</a>
+                            </h3>
                             <div class="block__27192 d-flex pt-1 border-top">
                                 <a href="#"><span class="icon-person"></span> NTP</a>
                                 <a href="#"><span class="icon-calendar-o"></span> 20 May 2016</a>
-                                <a href="#"><span class="icon-chat"></span> 2</a>
+                                <a href="#"><span class="icon-chat"></span> 0</a>
                             </div>
                         </div>
                     </div>
@@ -348,38 +409,44 @@
                         <figure class="img" style="background-image: url('images/contests/earth_sci_reg_2018.jpg')">
                         </figure>
                         <div class="h-100">
-                            <h3 class="mb-4"><a href="#" style="font-family: 'Noto Sans TC', sans-serif">地球科學學科能力競賽</a></h3>
+                            <h3 class="mb-4" style="font-family: 'Noto Sans TC', sans-serif">
+                                <a href="#">地球科學學科能力競賽</a>
+                            </h3>
                             <div class="block__27192 d-flex pt-1 border-top">
                                 <a href="#"><span class="icon-person"></span> NTP</a>
                                 <a href="#"><span class="icon-calendar-o"></span> 12 Nov 2018</a>
-                                <a href="#"><span class="icon-chat"></span> 4</a>
+                                <a href="#"><span class="icon-chat"></span> 6</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 mb-4">
                     <div class="block__86547 d-block d-xl-flex align-items-stretch">
-                        <figure class="img" style="background-image: url('images/contests/earth_sci_reg_2018.jpg')">
+                        <figure class="img" style="background-image: url('images/astro_club/fair.jpg')">
                         </figure>
                         <div class="h-100">
-                            <h3 class="mb-4"><a href="#" style="font-family: 'Noto Sans TC', sans-serif">蒼穹之上 由你繁思</a></h3>
+                            <h3 class="mb-4" style="font-family: 'Noto Sans TC', sans-serif">
+                                <a href="#">蒼穹之上 由你繁思</a>
+                            </h3>
                             <div class="block__27192 d-flex pt-1 border-top">
                                 <a href="#"><span class="icon-person"></span> NTP</a>
-                                <a href="#"><span class="icon-calendar-o"></span> 12 Nov 2018</a>
-                                <a href="#"><span class="icon-chat"></span> 4</a>
+                                <a href="#"><span class="icon-calendar-o"></span> 1 Apr 2018</a>
+                                <a href="#"><span class="icon-chat"></span> 0</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 mb-4">
                     <div class="block__86547 d-block d-xl-flex align-items-stretch">
-                        <figure class="img" style="background-image: url('images/contests/earth_sci_reg_2018.jpg')">
+                        <figure class="img" style="background-image: url('images/forum.png')">
                         </figure>
                         <div class="h-100">
-                            <h3 class="mb-4"><a href="#" style="font-family: 'Noto Sans TC', sans-serif">地球科學學科能力競賽</a></h3>
+                            <h3 class="mb-4" style="font-family: 'Noto Sans TC', sans-serif">
+                                <a href="#" >新世紀青少年高峰論壇</a>
+                            </h3>
                             <div class="block__27192 d-flex pt-1 border-top">
                                 <a href="#"><span class="icon-person"></span> NTP</a>
-                                <a href="#"><span class="icon-calendar-o"></span> 12 Nov 2018</a>
+                                <a href="#"><span class="icon-calendar-o"></span> 14 Mar 2018</a>
                                 <a href="#"><span class="icon-chat"></span> 4</a>
                             </div>
                         </div>
@@ -389,27 +456,36 @@
         </div>
     </section>
 
-    <footer class="site-footer slanted-footer">
+    <!-- Contact Me -->
+    <section class="site-section Contact" id="contact-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center" data-aos="fade">
+                    <h3 class="section-title-sub text-primary">Contact Me</h3>
+                    <h2 class="section-title mb-3">Contact Me If You Have Any Problem</h2>
+                </div>
+            </div>
+
+            <div class="mb-5 mb-lg-0">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeaWzt_JQAZNOMtJxyIzAy5bFwNC664X4FLuY3HU4YIosi7iQ/viewform?embedded=true" width="100%" height="925" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer slanted-footer" id="footer">
         <a href="#top" class="smoothscroll scroll-top">
             <span class="icon-keyboard_arrow_up"></span>
         </a>
         <div class="container">
             <div class="row mb-5">
                 <div class="col-6 col-md-3 mb-4 mb-md-0">
-                    <h3>Life Stage</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="#">High School</a></li>
-                        <li><a href="#">University</a></li>
-                        <li><a href="#">Future</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md-3 mb-4 mb-md-0">
                     <h3>Link</h3>
                     <ul class="list-unstyled">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="skills.html">Skills</a></li>
-                        <li><a href="works.html">Works</a></li>
-                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="#about-me-section">About</a></li>
+                        <li><a href="#skills-section">Skills</a></li>
+                        <li><a href="#works-section">Works</a></li>
+                        <li><a href="#experiences-section">Experiences</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md-3 mb-4 mb-md-0">
@@ -421,13 +497,23 @@
                     </ul>
                 </div>
                 <div class="col-6 col-md-3 mb-4 mb-md-0">
-                    <h3>Contact Me</h3>
+                    <h3>Address</h3>
+                    <p><a href="https://goo.gl/maps/oXfWyU5Y8GbPDVCd6">No. 1, Sec. 4, Roosevelt Rd., Taipei City 106, Taiwan (R.O.C.)</a></p>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+886-936000222">+886 0936000222</a></p>
+
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <h3>Social Media</h3>
                     <div class="footer-social">
                         <a href="https://www.facebook.com/tcNTP" target="_blank"><span class="icon-facebook"></span></a>
                         <a href="https://twitter.com/tc_NTP" target="_blank"><span class="icon-twitter"></span></a>
                         <a href="https://www.instagram.com/tc.ntp" target="_blank"><span class="icon-instagram"></span></a>
                         <a href="https://www.linkedin.com/in/傅道正" target="_blank"><span class="icon-linkedin"></span></a>
                     </div>
+                    <p></p>
+                    <h3>Email Address</h3>
+                    <p><a href="mailto:B08209010@nru.edu.tw">B08209010@ntu.edu.tw</a></p>
                 </div>
             </div>
 
@@ -444,7 +530,7 @@
     </footer>
 </div>
 
-<!-- SCRIPTS -->
+<!-- Scripts -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/isotope.pkgd.min.js"></script>
