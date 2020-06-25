@@ -4,60 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
     <title>大氣科學計算機</title>
 </head>
 <body>
     <!-- title -->
     <div class="jumbotron text-center title" style="margin-bottom: 0">
-        <h1>Some Useful Thing in Atmospheric Sciences</h1>
+        <h1>Something Useful in Atmospheric Sciences</h1>
     </div>
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-sm navbar-light nav-bg">
-        <a class="navbar-brand" href="https://tcntp.github.io/final/index.html">Home</a>
+        <a class="navbar-brand" href="https://tcntp.github.io/final/index.html"><i class="fas fa-cloud"></i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Table</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Calculator</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="#sec-intro">Intro</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Equations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Constant Table</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Calculator</a></li>
+                <li class="nav-item"><a class="nav-link" href="#footer">About</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- intro -->
-    <div class="container">
-        <div class="row">
-            123
+    <section class="container-fluid text-center intro-bg" id="sec-intro">
+        <div class="justify-content-center align-content-center intro">
+            <h1 class="text-light">還在慢慢查常數嗎?</h1>
+            <h1 class="text-danger">不知道虛溫怎麼算嗎？</h1>
+            <h1 class="text-danger">懶得慢慢算虛溫嗎？</h1>
+            <p class="text-info">用我的網頁就對了！</p>
         </div>
-    </div>
+    </section>
 
     <!-- footer -->
-    <div class="jumbotron" style="margin-bottom:0">
+    <div class="jumbotron" id="footer" style="margin-bottom:0">
         <div class="container">
-            <div class="row mb-5">
-                <div class="col col-md-6 mb-4 mb-md-0">
+            <div class="row mb-3">
+                <div class="col-6 mb-4 mb-md-0">
                     <h5>About</h5>
                     <ul class="list-unstyled">
                         <li><a href="https://github.com/tcNTP/tcNTP.github.io/tree/master/final" target="_blank">This Page on GitHub</a></li>
                         <li><a href="https://github.com/tcNTP/tcNTP.github.io/blob/master/final/README.md" target="_blank">README.md</a></li>
                         <li><a href="https://github.com/tcNTP" target="_blank">My GitHub Page</a></li>
                     </ul>
+                    <h5>Social Media</h5>
+                    <table>
+                        <tr>
+                            <th><a href="https://www.facebook.com/tcNTP"><i class="fab fa-facebook fa-2x"></i></a></th>
+                            <th><a href="https://twitter.com/tc_NTP"><i class="fab fa-twitter fa-2x"></i></a></th>
+                            <th><a href="https://www.instagram.com/tc.ntp"><i class="fab fa-instagram fa-2x"></i></a></th>
+                        </tr>
+                    </table>
                 </div>
-                <div class="col col-md-6 mb-4 mb-md-0">
+                <div class="col-6 mb-4 mb-md-0">
                     <h5>Contact Me</h5>
-                    <p><a href="https://goo.gl/maps/oXfWyU5Y8GbPDVCd6">No. 1, Sec. 4, Roosevelt Rd., Taipei City 106, Taiwan (R.O.C.)</a></p>
+                    <ul class="list-unstyled">
+                        <li>Phone: <a href="tel:+886 0980603640">0980-603-640</a></li>
+                        <li>E-Mail: <a href="mailto:B08209010@ntu.edu.tw">B08209010@ntu.edu.tw</a></li>
+                        <li>Address: <a href="https://www.google.com.tw/maps/place/106台北市大安區基隆路三段75號/">No. 75, Sec. 3, Keelung Rd., Taipei City 106, Taiwan (R.O.C.)</a></li>
+                    </ul>
                 </div>
             </div>
 
