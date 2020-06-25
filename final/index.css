@@ -1,11 +1,27 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #0d95e8;
 }
+section {
+    height: 100vh;
+}
 .title {
     font-family: 'Fredericka the Great', cursive;
-    background-color: #0d95e8;
 }
 
 .nav-bg {
     background-color: #0d95e8;
+}
+
+.intro-bg {
+    background: url("images/cloud-background.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.intro {
+    font-family: 'Noto Sans TC', sans-serif;
+    position: relative;
+
 }
