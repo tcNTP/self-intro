@@ -14,16 +14,12 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="icon" href="images/icon.svg">
     <title>大氣科學計算機</title>
 </head>
 <body>
-    <!-- title -->
-    <div class="jumbotron text-center title" style="margin-bottom: 0">
-        <h1>Something Useful in Atmospheric Sciences</h1>
-    </div>
-
     <!-- navbar -->
-    <nav class="navbar navbar-expand-sm navbar-light nav-bg">
+    <nav class="navbar navbar-expand-sm navbar-dark nav-bg">
         <a class="navbar-brand" href="https://tcntp.github.io/final/index.html"><i class="fas fa-cloud"></i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -40,19 +36,22 @@
     </nav>
 
     <!-- intro -->
-    <section class="container-fluid text-center intro-bg" id="sec-intro">
-        <div class="justify-content-center align-content-center intro">
-            <h1 class="text-light">還在慢慢查常數嗎?</h1>
-            <h1 class="text-danger">不知道虛溫怎麼算嗎？</h1>
-            <h1 class="text-danger">懶得慢慢算虛溫嗎？</h1>
-            <p class="text-info">用我的網頁就對了！</p>
+    <section class="container-fluid justify-content-center intro-bg" id="sec-intro">
+        <div class="text-center font-cus1">
+            <h1 class="display-4 text-white">Something Useful in Atmospheric Sciences</h1>
+            <h5 class="text-light text-info">Created by NTP Fu.</h5>
         </div>
     </section>
 
+    <!-- equations -->
+    <section class="container-fluid">
+        <div></div>
+    </section>
+
     <!-- constants-->
-    <section class="container-fluid const-bg bg-light" id="sec-const">
+    <section class="container-fluid bg-light" id="sec-const">
         <div>
-            <h1 class="title-const">Constants</h1>
+            <h1 class="title-sec font-cus1">Constants</h1>
             <br>
             <!-- Nav tabs -->
             <ul class="nav nav-tabs">
@@ -63,7 +62,7 @@
 
             <!-- Tab panes -->
             <div class="tab-content">
-                <div id="uni-const" class="container tab-pane active">
+                <div id="uni-const" class="container-fluid tab-pane active">
                     <table class="table table-hover text-center">
                         <thead>
                         <tr>
@@ -81,6 +80,12 @@
                             <td>$$kW/m^2$$</td>
                         </tr>
                         <tr>
+                            <td>Radius of Earth</td>
+                            <td>$$-$$</td>
+                            <td>$$6.38×10^{6}$$</td>
+                            <td>$$m$$</td>
+                        </tr>
+                        <tr>
                             <td>Standard Gravitational Acceleration</td>
                             <td>$$g$$</td>
                             <td>$$9.80665$$</td>
@@ -95,7 +100,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div id="gas-const" class="container tab-pane fade">
+                <div id="gas-const" class="container-fluid tab-pane fade">
                     <table class="table table-hover text-center">
                         <thead>
                         <tr>
@@ -140,7 +145,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div id="water-const" class="container tab-pane fade">
+                <div id="water-const" class="container-fluid tab-pane fade">
                     <table class="table table-hover text-center">
                         <thead>
                         <tr>
