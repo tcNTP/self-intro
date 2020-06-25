@@ -27,9 +27,9 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#sec-intro">Intro</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Equations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sec-eq">Equations</a></li>
                 <li class="nav-item"><a class="nav-link" href="#sec-const">Constants</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Calculator</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sec-calc">Calculator</a></li>
                 <li class="nav-item"><a class="nav-link" href="#footer">About</a></li>
             </ul>
         </div>
@@ -43,13 +43,8 @@
         </div>
     </section>
 
-    <!-- equations -->
-    <section class="container-fluid">
-        <div></div>
-    </section>
-
     <!-- constants-->
-    <section class="container-fluid bg-light" id="sec-const">
+    <section class="container-fluid bg-white" id="sec-const">
         <div>
             <h1 class="title-sec font-cus1">Constants</h1>
             <br>
@@ -184,6 +179,161 @@
                     </table>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- equations -->
+    <section class="container-fluid bg-light" id="sec-eq">
+        <div>
+            <h1 class="title-sec font-cus1">Equations</h1>
+            <br>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#temp-eq">Temperature</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#water-eq">Water</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#x-eq">Water</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="temp-eq" class="container-fluid tab-pane active">
+                    <table class="table table-hover text-center">
+                        <thead>
+                        <tr>
+                            <th>Quantity</th>
+                            <th>Symbol</th>
+                            <th>Equations</th>
+                            <th>Unit</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Virtual Temperature</td>
+                            <td>$$T_{v}$$</td>
+                            <td>$$(T + 273.15) * (1 + 0.608 * q)$$</td>
+                            <td>$$K$$</td>
+                        </tr>
+                        <tr>
+                            <td>Potential Temperature</td>
+                            <td>$$\theta$$</td>
+                            <td>$$T(\frac{P_{0}}{P})^{\frac{R_{d}}{c_{p}}}$$</td>
+                            <td>$$K$$</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="water-eq" class="container-fluid tab-pane fade">
+                    <table class="table table-hover text-center">
+                        <thead>
+                        <tr>
+                            <th>Quantity</th>
+                            <th>Symbol</th>
+                            <th>Equations</th>
+                            <th>Unit</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Mixing Ratio</td>
+                            <td>$$W$$</td>
+                            <td>$$\frac{m_{v}}{m_{d}}\text{ or }\frac{0.622e}{p-e}$$</td>
+                            <td>$$kg/kg$$</td>
+                        </tr>
+                        <tr>
+                            <td>Saturation Mixing Ratio</td>
+                            <td>$$W_{s}$$</td>
+                            <td>$$\frac{0.622e_{s}}{p-e_{s}}$$</td>
+                            <td>$$kg/kg$$</td>
+                        </tr>
+                        <tr>
+                            <td>Specific Humidity</td>
+                            <td>$$q$$</td>
+                            <td>$$\frac{W}{1+W}\text{ or }\frac{m_{v}}{m_{v}+m_{d}}$$</td>
+                            <td>$$kg/kg$$</td>
+                        </tr>
+                        <tr>
+                            <td>Saturation Specific Humidity</td>
+                            <td>$$q_{s}$$</td>
+                            <td>$$\frac{R_{d}}{R_{v}} *\frac{e}{(p - (1 - \frac{R_{d}}{R_{v}}) * e)}$$</td>
+                            <td>$$kg/kg$$</td>
+                        </tr>
+                        <tr>
+                            <td>Water Vapor</td>
+                            <td>$$e$$</td>
+                            <td>$$6.112exp[18.678 - \frac{T-273.15}{234.5} * \frac{T}{257.14 + (T-273.15)}]$$</td>
+                            <td>$$hPa$$</td>
+                        </tr>
+                        <tr>
+                            <td>Saturation Water Vapor</td>
+                            <td>$$e_{s}$$</td>
+                            <td>$$6.112exp(\frac{lv}{R_{v}} * \frac{1}{273.15} - \frac{1}{T})$$</td>
+                            <td>$$hPa$$</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="x-eq" class="container-fluid tab-pane fade">
+                    <table class="table table-hover text-center">
+                        <thead>
+                        <tr>
+                            <th>Quantity</th>
+                            <th>Symbol</th>
+                            <th>Value</th>
+                            <th>Unit</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Molar Mass, Water</td>
+                            <td>$$m_{v}$$</td>
+                            <td>$$18.0153$$</td>
+                            <td>$$kg/kmol$$</td>
+                        </tr>
+                        <tr>
+                            <td>Heat Capacity, Liquid Water</td>
+                            <td>$$-$$</td>
+                            <td>$$4186$$</td>
+                            <td>$$J/kg\ K$$</td>
+                        </tr>
+                        <tr>
+                            <td>Latent Heat of Vaporization, Water(L) at 0℃</td>
+                            <td>$$-$$</td>
+                            <td>$$2.5×10^{6}$$</td>
+                            <td>$$J/kg$$</td>
+                        </tr>
+                        <tr>
+                            <td>Latent Heat of Vaporization, Water(L) at 100℃</td>
+                            <td>$$-$$</td>
+                            <td>$$2.27×10^{6}$$</td>
+                            <td>$$J/kg$$</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- calculator -->
+    <section class="container-fluid bg-white" id="sec-calc">
+        <div>
+            <h1 class="title-sec font-cus1">Calculator</h1><br>
+            <form>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Temperature</span>
+                    </div>
+                    <input type="text" class="form-control">
+                </div>
+            </form>
+            <form>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Temperature</span>
+                    </div>
+                    <input type="text" class="form-control">
+                </div>
+            </form>
         </div>
     </section>
 
