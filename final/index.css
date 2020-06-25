@@ -10,18 +10,26 @@ section {
 .title {
     font-family: 'Fredericka the Great', cursive;
 }
-
+.title-const {
+    font-family: 'Fredericka the Great', cursive;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
 .nav-bg {
     background-color: #0d95e8;
 }
-
 .intro-bg {
     background: url("images/cloud-background.jpg") no-repeat center;
     background-size: cover;
 }
-
 .intro {
     font-family: 'Noto Sans TC', sans-serif;
     position: relative;
 
+}
+.const-bg {
+    background: #ffc107;
+}
+.latex {
+    color: black;
 }
