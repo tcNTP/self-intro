@@ -1,6 +1,15 @@
 html {
     scroll-behavior: smooth;
 }
+table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+table thead tbody {
+    display: table;
+    width: 100%;
+}
 .title-sec {
     margin-top: 10px;
     margin-bottom: 0;
