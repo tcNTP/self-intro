@@ -216,7 +216,7 @@
                         <tr>
                             <td>Virtual Temperature</td>
                             <td>$$T_{v}$$</td>
-                            <td>$$(T + 273.15) * (1 + 0.608 * q)$$</td>
+                            <td>$$(T + 273.15) * (1 + 0.608 * W)$$</td>
                             <td>$$K$$</td>
                         </tr>
                         <tr>
@@ -340,39 +340,64 @@
             <div class="mb-3" id="v-temp">
                 <label for="vt-t">Temperature:</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Please input temperature" id="vt-t" name="Temperature">
+                    <input type="text" class="form-control" placeholder="Please input temperature" id="vt-t">
                     <div class="input-group-append">
                         <span class="input-group-text">Unit: Kelvin</span>
                     </div>
                 </div>
-                <label for="vt-q">Specific Humidity:</label>
+                <label for="vt-q">Mixing Ratio:</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Please input specific humidity" id="vt-q" name="Specific Humidity">
+                    <input type="text" class="form-control" placeholder="Please input mixing ratio" id="vt-mr">
                     <div class="input-group-append">
                         <span class="input-group-text">Unit: kg/kg</span>
                     </div>
                 </div>
-                <button type="button" class="btn btn-success">Calculate</button>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal" onclick="vtcalc()">
+                    Calculate
+                </button>
             </div>
             <div class="mb-3" id="p-temp">
                 <label for="vt-t">Temperature:</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Please input temperature" id="vt-t" name="Temperature">
+                    <input type="text" class="form-control" placeholder="Please input temperature" id="pt-t" name="Temperature">
                     <div class="input-group-append">
                         <span class="input-group-text">Unit: Kelvin</span>
                     </div>
                 </div>
-                <label for="vt-q">Specific Humidity:</label>
+                <label for="vt-p">Pressure:</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Please input specific humidity" id="vt-q" name="Specific Humidity">
+                    <input type="text" class="form-control" placeholder="Please input Pressure" id="pt-p" name="Pressure">
                     <div class="input-group-append">
-                        <span class="input-group-text">Unit: kg/kg</span>
+                        <span class="input-group-text">Unit: hPa</span>
                     </div>
                 </div>
                 <button type="button" class="btn btn-success mb-3">Calculate</button>
             </div>
         </div>
     </section>
+
+    <!-- modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Result</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body"><p id="result"></p></div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!-- footer -->
     <div class="jumbotron" id="footer" style="margin-bottom:0">
@@ -434,16 +459,39 @@
             });
         });
     </script>
-    <!-- virtual temp script -->
+    <!-- select calculator -->
     <script>
-        $(document).ready(function(){
-            $("#v-temp-selector").click(function(){
-                $("#v-temp").hide();
-            });
-            $("#v-temp-selector").click(function(){
-                $("#v-temp").show();
-            });
+        $("#p-temp-selector").click(function(){
+            $("#v-temp").hide();
+            $("#p-temp").show();
         });
+
+        $("#v-temp-selector").click(function(){
+            $("#v-temp").show();
+            $("#p-temp").hide();
+        });
+    </script>
+    <!-- calculate script -->
+    <script type="text/javascript">
+        const g = 9.8;
+        const p0 = 1000;
+        const md = 28.9655;
+        const rd = 287.047;
+        const rv = 461.5;
+        const cp = 1005;
+        const cv = 718;
+        const lv = 2500000;
+        const TtoK = 273.15
+        function vtcalc() {
+            var t = parseFloat(document.getElementById("vt-t").value);
+            var q = parseFloat(document.getElementById("vt-mr").value);
+            document.getElementById("result").innerHTML = t * (1 + 0.608 * q);
+        }
+        function ptcalc() {
+            var t = parseFloat(document.getElementById("pt-t").value);
+            var p = parseFloat(document.getElementById("pt-p").value);
+            document.getElementById("result").innerHTML = t * Math.pow(p0 / p, rd / rv);
+        }
     </script>
 
 </body>
