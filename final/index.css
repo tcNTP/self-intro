@@ -1,14 +1,11 @@
 html {
     scroll-behavior: smooth;
 }
-table {
+.table-config {
     display: block;
+    width: 100%;
     overflow-x: auto;
     white-space: nowrap;
-}
-table thead tbody {
-    display: table;
-    width: 100%;
 }
 .title-sec {
     margin-top: 10px;
