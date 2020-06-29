@@ -24,3 +24,6 @@ html {
 .font-cus1 {
     font-family: 'Fredericka the Great', cursive;
 }
+#p-temp {
+    display: none;
+}
