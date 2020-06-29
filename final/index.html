@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+    <meta property="og:url" content="https://tcntp.github.io/final/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="大氣科學小幫手">
+    <meta property="og:image" content="https://tcntp.github.io/final/images/cloud-background.jpg">
+    <meta property="og:image:alt" content="image">
+    <meta property="og:description" content="Something Useful in Atmospheric Sciences.">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="index.css">
@@ -15,7 +21,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="icon" href="images/icon.svg">
-    <title>大氣科學計算機</title>
+    <title>大氣科學小幫手</title>
 </head>
 <body>
     <!-- navbar -->
@@ -316,24 +322,55 @@
 
     <!-- calculator -->
     <section class="container-fluid bg-white" id="sec-calc">
-        <div>
+        <div class="mt-3">
             <h1 class="title-sec font-cus1">Calculator</h1><br>
-            <form>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Temperature</span>
-                    </div>
-                    <input type="text" class="form-control">
+            <div class="dropdown mb-3">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                    Please Select...
+                </button>
+                <div class="dropdown-menu">
+                    <h5 class="dropdown-header">Temperature</h5>
+                    <div class="dropdown-item" id="v-temp-selector">Virtual Temperature</div>
+                    <div class="dropdown-item" id="p-temp-selector">Potential Temperature</div>
+                    <h5 class="dropdown-header">Water</h5>
+                    <div class="dropdown-item" href="#">Saturation Vapor Pressure</div>
+                    <div class="dropdown-item" href="#">Link 3</div>
                 </div>
-            </form>
-            <form>
+            </div>
+            <div class="mb-3" id="v-temp">
+                <label for="vt-t">Temperature:</label>
                 <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Temperature</span>
+                    <input type="text" class="form-control" placeholder="Please input temperature" id="vt-t" name="Temperature">
+                    <div class="input-group-append">
+                        <span class="input-group-text">Unit: Kelvin</span>
                     </div>
-                    <input type="text" class="form-control">
                 </div>
-            </form>
+                <label for="vt-q">Specific Humidity:</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Please input specific humidity" id="vt-q" name="Specific Humidity">
+                    <div class="input-group-append">
+                        <span class="input-group-text">Unit: kg/kg</span>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success">Calculate</button>
+            </div>
+            <div class="mb-3" id="p-temp">
+                <label for="vt-t">Temperature:</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Please input temperature" id="vt-t" name="Temperature">
+                    <div class="input-group-append">
+                        <span class="input-group-text">Unit: Kelvin</span>
+                    </div>
+                </div>
+                <label for="vt-q">Specific Humidity:</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Please input specific humidity" id="vt-q" name="Specific Humidity">
+                    <div class="input-group-append">
+                        <span class="input-group-text">Unit: kg/kg</span>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success mb-3">Calculate</button>
+            </div>
         </div>
     </section>
 
@@ -378,6 +415,36 @@
             </div>
          </div>
     </div>
+
+    <!-- animation script -->
+    <script>
+        $('.dropdown').on('show.bs.dropdown', function(e){
+            var $dropdown = $(this).find('.dropdown-menu');
+            var orig_margin_top = parseInt($dropdown.css('margin-top'));
+            $dropdown.css({'margin-top': (orig_margin_top + 10) + 'px', opacity: 0}).animate({'margin-top': orig_margin_top + 'px', opacity: 1}, 300, function(){
+                $(this).css({'margin-top':''});
+            });
+        });
+        // Add slidedown & fadeout animation to dropdown
+        $('.dropdown').on('hide.bs.dropdown', function(e){
+            var $dropdown = $(this).find('.dropdown-menu');
+            var orig_margin_top = parseInt($dropdown.css('margin-top'));
+            $dropdown.css({'margin-top': orig_margin_top + 'px', opacity: 1, display: 'block'}).animate({'margin-top': (orig_margin_top + 10) + 'px', opacity: 0}, 300, function(){
+                $(this).css({'margin-top':'', display:''});
+            });
+        });
+    </script>
+    <!-- virtual temp script -->
+    <script>
+        $(document).ready(function(){
+            $("#v-temp-selector").click(function(){
+                $("#v-temp").hide();
+            });
+            $("#v-temp-selector").click(function(){
+                $("#v-temp").show();
+            });
+        });
+    </script>
 
 </body>
 </html>
