@@ -24,6 +24,9 @@ html {
 .font-cus1 {
     font-family: 'Fredericka the Great', cursive;
 }
+.dropdown-item:hover {
+    cursor: pointer;
+}
 #p-temp {
     display: none;
 }
