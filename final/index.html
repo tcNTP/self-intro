@@ -333,8 +333,8 @@
                     <div class="dropdown-item" id="v-temp-selector">Virtual Temperature</div>
                     <div class="dropdown-item" id="p-temp-selector">Potential Temperature</div>
                     <h5 class="dropdown-header">Water</h5>
-                    <div class="dropdown-item" href="#">Saturation Vapor Pressure</div>
-                    <div class="dropdown-item" href="#">Link 3</div>
+                    <div class="dropdown-item" id="swv-pres-selector">Saturation Vapor Pressure</div>
+                    <div class="dropdown-item" id="smr-selector">Saturation Mixing Ratio</div>
                 </div>
             </div>
             <div class="mb-3" id="v-temp">
@@ -371,7 +371,40 @@
                         <span class="input-group-text">Unit: hPa</span>
                     </div>
                 </div>
-                <button type="button" class="btn btn-success mb-3">Calculate</button>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal" onclick="ptcalc()">
+                    Calculate
+                </button>
+            </div>
+            <div class="mb-3" id="swv-pres">
+                <label for="vt-t">Temperature:</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Please input temperature" id="swvp-t" name="Temperature">
+                    <div class="input-group-append">
+                        <span class="input-group-text">Unit: Kelvin</span>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal" onclick="swvpcalc()">
+                    Calculate
+                </button>
+            </div>
+            <div class="mb-3" id="smr">
+                <label for="vt-t">Temperature:</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Please input temperature" id="smr-t" name="Temperature">
+                    <div class="input-group-append">
+                        <span class="input-group-text">Unit: Kelvin</span>
+                    </div>
+                </div>
+                <label for="vt-p">Pressure:</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Please input Pressure" id="smr-p" name="Pressure">
+                    <div class="input-group-append">
+                        <span class="input-group-text">Unit: hPa</span>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal" onclick="smrcalc()">
+                    Calculate
+                </button>
             </div>
         </div>
     </section>
@@ -463,12 +496,31 @@
     <script>
         $("#p-temp-selector").click(function(){
             $("#v-temp").hide();
+            $("#swv-pres").hide();
+            $("#smr").hide();
+            $("#p-temp").fadeIn("slow");
             $("#p-temp").show();
         });
-
         $("#v-temp-selector").click(function(){
-            $("#v-temp").show();
             $("#p-temp").hide();
+            $("#swv-pres").hide();
+            $("#smr").hide();
+            $("#v-temp").fadeIn("slow");
+            $("#v-temp").show();
+        });
+        $("#swv-pres-selector").click(function(){
+            $("#v-temp").hide();
+            $("#p-temp").hide();
+            $("#smr").hide();
+            $("#swv-pres").fadeIn("slow");
+            $("#swv-pres").show();
+        });
+        $("#smr-selector").click(function(){
+            $("#v-temp").hide();
+            $("#p-temp").hide();
+            $("#swv-pres").hide();
+            $("#smr").fadeIn("slow");
+            $("#smr").show();
         });
     </script>
     <!-- calculate script -->
@@ -481,17 +533,31 @@
         const cp = 1005;
         const cv = 718;
         const lv = 2500000;
-        const TtoK = 273.15
+        const TtoK = 273.15;
         function vtcalc() {
             var t = parseFloat(document.getElementById("vt-t").value);
             var q = parseFloat(document.getElementById("vt-mr").value);
-            document.getElementById("result").innerHTML = t * (1 + 0.608 * q);
-        }
+            vt = t*(1+0.608*q);
+            document.getElementById("result").innerHTML = Math.round(vt*1000)/1000+" K";
+        };
         function ptcalc() {
             var t = parseFloat(document.getElementById("pt-t").value);
             var p = parseFloat(document.getElementById("pt-p").value);
-            document.getElementById("result").innerHTML = t * Math.pow(p0 / p, rd / rv);
-        }
+            pt = t*Math.pow((p0/p), (rd/cp));
+            document.getElementById("result").innerHTML = Math.round(pt*1000)/1000+" K";
+        };
+        function swvpcalc() {
+            var t = parseFloat(document.getElementById("swvp-t").value);
+            swvp = 6.112*Math.exp((lv/rv)*((1/273.15)-(1/t)));
+            document.getElementById("result").innerHTML = Math.round(swvp*1000)/1000 +" hPa";
+        };
+        function smrcalc() {
+            var t = parseFloat(document.getElementById("smr-t").value);
+            var p = parseFloat(document.getElementById("smr-p").value);
+            es = 6.112*Math.exp((lv/rv)*((1/273.15)-(1/t)));
+            smr = (0.622*es)/(p-es);
+            document.getElementById("result").innerHTML = Math.round(smr*1000)/1000+" kg/kg";
+        };
     </script>
 
 </body>
